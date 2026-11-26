@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mengenal Kota Gorontalo</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f8fa;
+  color: #263746;
+  line-height: 1.6;
+}
+
+header {
+  background: #123047;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h2 {
+  color: #f4b942;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+}
+
+nav a:hover {
+  color: #f4b942;
+}
+
+.hero {
+  height: 400px;
+  background: linear-gradient(
+    rgba(0,0,0,0.4),
+    rgba(0,0,0,0.6)
+  ), url("https://images.unsplash.com/photo-1500375592092-40eb2168fd21")
+  center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 45px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+section {
+  padding: 50px 8%;
+}
+
+h2 {
+  color: #087e83;
+  margin-bottom: 15px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit, minmax(220px, 1fr)
+  );
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px #00000015;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  color: #087e83;
+  padding: 10px 15px 0;
+}
+
+.card p {
+  padding: 10px 15px 20px;
+}
+
+#budaya {
+  background: #eaf3f2;
+}
+
+footer {
+  background: #123047;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+@media(max-width:600px) {
+  header {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  nav {
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h2>GORONTALO</h2>
+  <nav>
+    <a href="#beranda">Beranda</a>
+    <a href="#tentang">Tentang</a>
+    <a href="#wisata">Wisata</a>
+    <a href="#budaya">Budaya</a>
+    <a href="#kuliner">Kuliner</a>
+  </nav>
+</header>
+
+<div class="hero" id="beranda">
+  <div>
+    <h1>Pesona Kota Gorontalo</h1>
+    <p>Mengenal keindahan alam, budaya,
+    dan kekayaan kuliner Gorontalo.</p>
+  </div>
+</div>
+
+<section id="tentang">
+  <h2>Tentang Kota Gorontalo</h2>
+  <p>
+    Kota Gorontalo merupakan ibu kota Provinsi
+    Gorontalo yang terletak di Pulau Sulawesi.
+    Kota ini dikenal dengan julukan Serambi
+    Madinah. Gorontalo memiliki kekayaan sejarah,
+    budaya, serta masyarakat yang ramah.
+  </p>
+</section>
+
+<section id="wisata">
+  <h2>Wisata Kota Gorontalo</h2>
+  <div class="cards">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
+      <h3>Wisata Pantai</h3>
+      <p>Gorontalo memiliki pantai dengan
+      pemandangan laut yang indah.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1511497584788-876760111969">
+      <h3>Wisata Alam</h3>
+      <p>Keindahan alam berupa perbukitan,
+      hutan, dan pemandangan hijau.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c">
+      <h3>Wisata Sejarah</h3>
+      <p>Berbagai peninggalan sejarah
+      menjadi daya tarik daerah ini.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="budaya">
+  <h2>Budaya dan Tradisi</h2>
+  <div class="cards">
+
+    <div class="card">
+      <h3>Rumah Adat Dulohupa</h3>
+      <p>Rumah adat khas Gorontalo yang
+      menjadi simbol kebudayaan daerah.</p>
+    </div>
+
+    <div class="card">
+      <h3>Karawo</h3>
+      <p>Kerajinan sulaman khas Gorontalo
+      yang memiliki motif indah.</p>
+    </div>
+
+    <div class="card">
+      <h3>Bahasa Gorontalo</h3>
+      <p>Bahasa daerah yang menjadi
+      identitas masyarakat Gorontalo.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="kuliner">
+  <h2>Makanan Khas Gorontalo</h2>
+  <div class="cards">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1547592180-85f173990554">
+      <h3>Binte Biluhuta</h3>
+      <p>Sup jagung khas Gorontalo
+      yang memiliki rasa gurih dan segar.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd">
+      <h3>Ilabulo</h3>
+      <p>Makanan tradisional berbahan
+      dasar sagu dan ayam atau ikan.</p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <h3>GORONTALO</h3>
+  <p>Pesona Alam, Budaya, dan Sejarah</p>
+  <p>© 2026 Website Kota Gorontalo</p>
+</footer>
+
+</body>
+</html>
